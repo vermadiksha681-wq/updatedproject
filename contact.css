@@ -1,0 +1,134 @@
+/* ---------------- GLOBAL ---------------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  color: #333;
+}
+
+/* ---------------- CONTACT SECTION ---------------- */
+.contact-section {
+  padding: 80px 10%;
+  text-align: center;
+  background: #fdfdfd;
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  color: #931d45;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+/* ---------------- CONTENT LAYOUT ---------------- */
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* ---------------- CONTACT FORM ---------------- */
+.contact-form {
+  flex: 1;
+  min-width: 320px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #931d45;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #931d45;
+  box-shadow: 0 0 5px rgba(147, 29, 69, 0.4);
+}
+
+/* ---------------- SUBMIT BUTTON ---------------- */
+.submit-btn {
+  background: #931d45;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #b32b58;
+  transform: scale(1.05);
+}
+
+/* ---------------- CONTACT INFO ---------------- */
+.contact-info {
+  flex: 1;
+  min-width: 320px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.contact-info h3 {
+  color: #931d45;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-info iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 15px;
+}
+
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 5%;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+   

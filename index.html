@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Boutique - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="category.css">
+</head>
+<body>
+  <nav class="navbar">
+    <!-- LEFT NAV -->
+    <div class="nav-left">
+      <a href="index.html" class="nav-link active">Home</a>
+
+      <!-- CATEGORY DROPDOWN -->
+      <div class="dropdown">
+        <input type="checkbox" id="toggle-cat-home" />
+        <label for="toggle-cat-home" class="dropbtn">Category ▾</label>
+        <div class="dropdown-content">
+          <a href="suit.html">Suit</a>
+          <a href="lehnga.html">Lehenga</a>
+          <a href="saree.html">Saree</a>
+          <a href="anarkali.html">Anarkali</a>
+          <a href="gharara.html">Gharara</a>
+        </div>
+      </div>
+
+      <a href="#about-section" class="nav-link">About Us</a>
+      <a href="#contact-section" class="nav-link">Contact Us</a>
+    </div>
+
+    <!-- LOGO CENTER -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="logopic.jpg" alt="Heritage Couture Logo" class="logo-img" />
+      </a>
+    </div>
+
+    <!-- RIGHT NAV -->
+    <div class="nav-right">
+      <!-- PROFILE DROPDOWN -->
+      <div class="profile">
+        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Profile" class="icon-img" />
+        <div class="dropdown">
+          <a href="login.html" class="dropdown-item">Login</a>
+          <a href="signup.html" class="dropdown-item">Sign Up</a>
+        </div>
+      </div>
+
+      <!-- SEARCH ICON -->
+      <input type="checkbox" id="toggle-search" />
+      <label for="toggle-search" class="nav-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Search" class="icon-img" />
+      </label>
+      <!-- CART ICON -->
+      <label for="cart-toggle" class="nav-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Cart" class="icon-img" />
+      </label>
+    </div>
+  </nav>
+
+  <!-- STATIC FRONT IMAGE -->
+<section class="front-image">
+  <div class="image-container">
+    <img src="categoryimages/photo5.jpg" alt="Fashion Boutique Front" class="main-image">
+  </div>
+</section>
+
+
+  <!-- CATEGORY SECTION -->
+  <section class="category-page">
+    <h1>Explore Our Categories</h1>
+
+    <div class="category-row">
+      <div class="category-item">
+        <a href="suit.html">
+          <img src="categoryimages/suit.jpg" alt="Suit">
+        </a>
+        <p class="category-label">Suit</p>
+      </div>
+
+      <div class="category-item">
+        <a href="lehnga.html">
+          <img src="categoryimages/lehnga.jpg" alt="Lehenga">
+        </a>
+        <p class="category-label">Lehenga</p>
+      </div>
+
+      <div class="category-item">
+        <a href="saree.html">
+          <img src="categoryimages/saree.jpg" alt="Saree">
+        </a>
+        <p class="category-label">Saree</p>
+      </div>
+
+      <div class="category-item">
+        <a href="anarkali.html">
+          <img src="categoryimages/anarkali.jpg" alt="Anarkali">
+        </a>
+        <p class="category-label">Anarkali</p>
+      </div>
+
+      <div class="category-item">
+        <a href="gharara.html">
+          <img src="categoryimages/gharara.jpg" alt="Gharara">
+        </a>
+        <p class="category-label">Gharara</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section class="about-home" id="about-section">
+    <div class="about-container">
+      <h1>About Us</h1>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Welcome to <strong>Fashion Boutique</strong> — your one-stop destination for timeless ethnic elegance. 
+            We bring together a curated collection of exquisite sarees, lehengas, suits, and anarkalis that blend 
+            traditional craftsmanship with modern style.
+          </p>
+          <p>
+            Every piece is designed to reflect grace, culture, and individuality — perfect for weddings, festivals, 
+            and everyday celebrations. We take pride in delivering high-quality fabric, impeccable designs, and a 
+            seamless shopping experience for our valued customers.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <img src="categoryimages/showroom.jpg" alt="Fashion Boutique Showroom">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CONTACT FORM SECTION -->
+  <section class="contact-section" id="contact-section">
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <p>Have questions or feedback? Fill out the form below and we'll get back to you soon.</p>
+
+      <form action="#" method="post" class="contact-form" id="contactForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" pattern="[0-9]{10,12}" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h3>Fashion Boutique</h3>
+      <p>Your one-stop destination for elegant ethnic wear.</p>
+    </div>
+    <div class="footer-section contact">
+      <h3>Contact</h3>
+      <p>Email: support@fashionboutique.com</p>
+      <p>Phone: +91 9876543210</p>
+      <p>Address: 123 Fashion Street, Mumbai, India</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Fashion Boutique. All rights reserved.
+  </div>
+</footer>
+
+
+  <!-- CART SIDEBAR -->
+  <input type="checkbox" id="cart-toggle" hidden>
+
+  <div class="cart-overlay"></div>
+
+  <div class="cart-sidebar">
+    <label for="cart-toggle" class="close-cart">&times;</label>
+    <h2>Your Cart</h2>
+
+    <div class="cart-items">
+      <!-- Red Suit -->
+      <div class="cart-item">
+        <img src="categoryimages/redsuit.jpg" alt="Red Designer Suit">
+        <div class="cart-details">
+          <p>Red Designer Suit</p>
+          <p>₹3000</p>
+          <label for="cart-item1" class="remove-btn">Remove</label>
+        </div>
+      </div>
+
+      <!-- Bridal Lehenga -->
+      <div class="cart-item">
+        <img src="categoryimages/bridallehnga.jpg" alt="Bridal Lehenga">
+        <div class="cart-details">
+          <p>Bridal Lehenga</p>
+          <p>₹50000</p>
+          <label for="cart-item2" class="remove-btn">Remove</label>
+        </div>
+      </div>
+    </div>
+    <a href="checkout.html">
+      <button class="checkout-btn">Checkout</button>
+    </a>
+  </div>
+</body>
+</html>

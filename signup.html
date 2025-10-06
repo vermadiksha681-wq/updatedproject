@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+   <style>
+    /* Footer styling */
+    footer {
+      background-color: rgb(247, 222, 226);
+      color: #fff;
+      text-align: center;
+      padding: 50px 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    footer .brand {
+      font-weight: bold;
+      font-size: 2em;
+      letter-spacing: 2px;
+      color: #931d45; /* Optional: a stylish pink accent */
+    }
+  </style>
+</head>
+
+<body>
+<!-- NAVBAR -->
+  <nav class="navbar">
+    <!-- LEFT NAV -->
+    <div class="nav-left">
+      <a href="index.html" class="nav-link active">Home</a>
+
+      <!-- CATEGORY DROPDOWN -->
+      <div class="dropdown">
+        <input type="checkbox" id="toggle-cat-home" />
+        <label for="toggle-cat-home" class="dropbtn">Category ▾</label>
+        <div class="dropdown-content">
+          <a href="suit.html">Suit</a>
+          <a href="lehenga.html">Lehenga</a>
+          <a href="saree.html">Saree</a>
+          <a href="anarkali.html">Anarkali</a>
+          <a href="gharara.html">Gharara</a>
+        </div>
+      </div>
+
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+    </div>
+
+    <!-- LOGO CENTER -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="logopic.jpg" alt="Heritage Couture Logo" class="logo-img" />
+      </a>
+    </div>
+
+    <!-- RIGHT NAV -->
+    <div class="nav-right">
+      <!-- SEARCH ICON -->
+      <input type="checkbox" id="toggle-search" />
+      <label for="toggle-search" class="nav-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Search" class="icon-img" />
+      </label>
+
+        <!-- SEARCH BAR -->
+    <div class="top-search-bar">
+  <label for="toggle-search" class="close-btn">&times;</label>
+  <form action="" method="get" onsubmit="return false;">
+    <input list="products" name="product" placeholder="Search products..." required>
+    <datalist id="products">
+      <option value="Saree">
+      <option value="Lehenga">
+      <option value="Suit">
+      <option value="Anarkali">
+      <option value="Gharara">
+    </datalist>
+    <button onclick="
+      if(this.form.product.value=='Saree'){window.location='saree.html'}
+      else if(this.form.product.value=='Lehenga'){window.location='lehnga.html'}
+      else if(this.form.product.value=='Suit'){window.location='suit.html'}
+      else if(this.form.product.value=='Anarkali'){window.location='anarkali.html'}
+      else if(this.form.product.value=='Gharara'){window.location='gharara.html'}
+      else{alert('No results found')}
+    ">Search</button>
+  </form>
+</div>
+
+
+      <!-- CART ICON -->
+      <a href="#" class="nav-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Cart" class="icon-img" />
+      </a>
+    </div>
+  </nav>
+
+
+<div class="form-container">
+  <div class="form-box">
+    <h2>Sign up</h2>
+    <form action="signup_process.html" method="POST">
+      
+      <!-- First Name -->
+      <input 
+        type="text" 
+        name="first_name" 
+        placeholder="First name" 
+        required
+        pattern="[A-Za-z]{2,20}" 
+        title="First name should contain only letters, 2-20 characters"
+      >
+
+      <!-- Last Name -->
+      <input 
+        type="text" 
+        name="last_name" 
+        placeholder="Last name" 
+        required
+        pattern="[A-Za-z]{2,20}" 
+        title="Last name should contain only letters, 2-20 characters"
+      >
+
+      <!-- Email -->
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="E-mail" 
+        required
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+        title="Enter a valid email (e.g., user@example.com)"
+      >
+
+      <!-- Password -->
+      <input 
+        type="password" 
+        name="password" 
+        placeholder="Password" 
+        required
+        minlength="6" 
+        title="Password must be at least 6 characters"
+      >
+
+      <!-- Confirm Password -->
+      <input 
+        type="password" 
+        name="confirm_password" 
+        placeholder="Confirm Password" 
+        required
+        minlength="6"
+        title="Please re-enter your password"
+      >
+
+      <button type="submit">Create account</button>
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer>
+  <p class="brand">Fashion Boutique</p>
+</footer>
+
+</body>
+</html>

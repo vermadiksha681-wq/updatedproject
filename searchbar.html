@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Bar</title>
+  <link rel="stylesheet" href="searchbar.css">
+</head>
+<body>
+
+  <div class="search-container">
+    <form class="search-box" onsubmit="return searchProduct()">
+      <input type="text" id="searchInput" placeholder="Search..." required>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <script>
+    function searchProduct() {
+      let query = document.getElementById("searchInput").value.toLowerCase();
+
+      if (query === "saree") {
+        window.location.href = "saree.html";
+      } else if (query === "lehenga") {
+        window.location.href = "lehenga.html";
+      } else if (query === "suit") {
+        window.location.href = "suit.html";
+      } else if (query === "gharara") {
+        window.location.href = "gharara.html";
+      } else if (query === "anarkali") {
+        window.location.href = "anarkali.html";
+      } else {
+        alert("No results found for '" + query + "'");
+      }
+
+      return false; // prevent page reload
+    }
+  </script>
+
+</body>
+</html>
