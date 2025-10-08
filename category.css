@@ -21,7 +21,7 @@
 
 
 .category-page {
-  padding: 20px 20px;
+  padding: 40px 20px;
   text-align: center;
   background-color: #fff;
 }
@@ -30,7 +30,7 @@
   font-size: 2.2rem;
   margin-bottom: 10px;
   font-family: 'Playfair Display', serif;
-  color: #333;
+  color: #000000;
 }
 
 /* Horizontal scroll row */
@@ -150,18 +150,4 @@
   background-color: #f4f4f4;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .product-card {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .product-details {
-    text-align: center;
-  }
-
-  .product-img {
-    max-width: 100%;
-  }
-}

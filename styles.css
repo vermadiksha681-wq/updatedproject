@@ -504,15 +504,16 @@ body {
 
 /* ---------------- ABOUT SECTION ---------------- */
 .about-home {
-  padding: 80px 10%;
+  padding: 10px 5%;
   background-color: #fff;
   text-align: center;
 }
 
 .about-home h1 {
   font-size: 2.5rem;
-  color: #931d45;
-  margin-bottom: 40px;
+  color: #0c0c0c;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
 }
 
 .about-container {
@@ -585,8 +586,9 @@ html {
 }
 
 .contact-container h1 {
-  font-size: 28px;
+  font-size: 35px;
   color: #4b3a44;
+  font-family: 'Playfair Display', serif;
   margin-bottom: 10px;
 }
 
@@ -623,7 +625,7 @@ html {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #b5651d;
+  border-color: #f980a4;
   box-shadow: 0 0 5px rgba(181, 101, 29, 0.3);
 }
 
@@ -632,7 +634,7 @@ html {
 }
 
 .contact-form button {
-  background: #b5651d;
+  background:palevioletred;
   color: #fff;
   border: none;
   padding: 12px;
@@ -643,7 +645,7 @@ html {
 }
 
 .contact-form button:hover {
-  background: #4b3a44;
+  background: #272325;
 }
 
 
